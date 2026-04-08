@@ -31,3 +31,10 @@ El proyecto demuestra la separación de responsabilidades:
 
 
 [Modelo Arquitectura BI](diagrams/arquitectura.png)
+
+
+Consideraciones clave para tu implementación:
+Instancia de SQL Server: Puedes tener ambas bases de datos (OLTP y DW) en la misma instancia de SQL Server 2008, o en instancias separadas si la carga es muy alta. Para empezar, una sola instancia es suficiente.
+Mantenimiento de ETL: Los paquetes SSIS deben ejecutarse periódicamente (ej. cada noche, cada semana) para actualizar el Data Warehouse con los nuevos datos del OLTP.
+Datos del Detector para BI: Si quieres analizar los datos del detector de plantas, crearías otra "tabla de hechos" en tu Data Warehouse (ej. FactAnalisisPlantas) con sus dimensiones correspondientes (DimPlanta, DimEnfermedad, DimUsuario, DimFecha).
+Al diferenciar claramente estas dos bases de datos y sus propósitos, te aseguras de que tu aplicación Django funcione de manera eficiente (OLTP) mientras construyes una plataforma robusta para el análisis de negocios (OLAP/DW) con las herramientas de SQL Server 2008.
