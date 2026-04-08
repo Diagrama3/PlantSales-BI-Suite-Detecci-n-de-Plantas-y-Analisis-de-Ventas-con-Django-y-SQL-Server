@@ -45,10 +45,11 @@ Tecnología Recomendada: Un RDBMS diseñado para cargas de trabajo analíticas (
 SQL Server 2008 es una excelente opción para construir tu Data Warehouse y tus cubos OLAP.
 Ventajas de SQL Server 2008 para OLAP/DW:
 
-SSIS (Integration Services): Herramienta robusta de ETL para extraer datos de tu OLTP (incluyendo el de Django), transformarlos y cargarlos en tu DW.
+SSIS (Integration Services):
+Herramienta robusta de ETL para extraer datos de tu OLTP (incluyendo el de Django), transformarlos y cargarlos en tu DW.
 
 
-SSAS (Analysis Services): Te permite crear cubos OLAP a partir de tu DW, proporcionando un rendimiento excepcional para consultas multidimensionales y agregaciones precalculadas.
+SSAS (Analysis Services): permiteeeervices permite crear cubos OLAP a partir de tu DW, proporcionando un rendimiento excepcional para consultas multidimensionales y agregaciones precalculadas.
 
 
 SSRS (Reporting Services): Para la creación de informes y dashboards visuales basados en los datos del DW o los cubos.
