@@ -30,5 +30,4 @@ El proyecto demuestra la separación de responsabilidades:
 
 
 
-![OLAP_Vs_OLTP](https://github.com/user-attachments/assets/a3d23efd-3048-48f6-8d83-5c1693755fef)
-![Uploading image.png…]()
+[Modelo Arquitectura BI](diagrams/arquitectura.png)
